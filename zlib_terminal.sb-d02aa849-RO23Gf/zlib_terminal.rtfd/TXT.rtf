@@ -1,0 +1,138 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf340
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Verdana;\f2\fmodern\fcharset0 CourierNewPSMT;
+}
+{\colortbl;\red255\green255\blue255;\red135\green135\blue135;\red255\green255\blue84;\red38\green38\blue38;
+\red31\green78\blue17;\red159\green159\blue159;\red193\green193\blue193;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 zlib_terminal - RevoGirl\
+\
+To use:\
+1. Backup S/L/E/AppleHDA.kext\
+2. Finder/New Folder  \
+3. Drag S/L/E/AppleHDA.kext to Desktop\
+4. Drag S/L/E/AppleHDA.kext/Contents/Resources/Platforms.xml.zlib to New Folder\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ri-1400\pardirnatural
+\cf0 5. Drag zlib.pl to New Folder  (Attached below)\
+6. Applications/Utilities/Terminal\
+6a. $ cd New Folder\
+6b. $ cd perl zlib.pl inflate Platforms.xml.zlib > Platforms.xml\
+8. Property List Editor/NewFolder/Platforms.xml\
+8a. Edit\
+8b. Save\
+9. Terminal\
+9a. $ rm Platforms.xml.zlib\
+9b. $ perl zlib.pl deflate Platforms.xml > Platforms.xml.zlib\
+10. Drag New Folder/Platforms.xml.zlib to Desktop/AppleHDA.kext/Contents/Resources\
+11. Finder/Replace/Yes\
+12. Close Finder Windows\
+13. Install with KextBeast\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 Commands:\
+perl zlib.pl inflate layout1.xml.zlib > layout1.xml\
+perl zlib.pl inflate layout2.xml.zlib > layout2.xml\
+perl zlib.pl inflate layout3.xml.zlib > layout3.xml\
+perl zlib.pl inflate Platforms.xml.zlib > Platforms.xml\
+\
+perl zlib.pl deflate layout1.xml > layout1.xml.zlib\
+perl zlib.pl deflate layout2.xml > layout2.xml.zlib\
+perl zlib.pl deflate layout3.xml > layout3.xml.zlib\
+perl zlib.pl deflate Platforms.xml > Platforms.xml.zlib\
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+\cf0 {{\NeXTGraphic zlib.pl \width640 \height640
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+\cf0 \
+zlib.pl\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 \
+\
+Original Blog/Wordpress/RevoGirl\
+\
+\pard\pardeftab720
+
+\f1\fs22 \cf2 April 19, 2012 by {\field{\*\fldinst{HYPERLINK "https://revogirl.wordpress.com/author/revogirl/"}}{\fldrslt 
+\b \cf0 \cb3 RevoGirl}}\
+\pard\pardeftab720\sa160
+
+\fs24 \cf4 Good news. I committed an updated version of my AppleHDA patching script. Which is now available from {\field{\*\fldinst{HYPERLINK "https://github.com/RevoGirl/FileGuard/tree/master/Patches/AppleHDA"}}{\fldrslt \cf5 my Github repository}}. Go get it and give it a try.\
+Please be so kind to let me know if it is working for you.\
+Thank you.\
+p.s. Yeah yeah yea. The resource files (XML) are now compressed \'96 another step forward to speed up the boot process \'96 with 
+\b zlib
+\b0 . Whatever. Have a look here: {\field{\*\fldinst{HYPERLINK "http://opensource.apple.com/source/xnu/xnu-1699.24.8/libkern/zlib/"}}{\fldrslt \cf5 http://opensource.apple.com/source/xnu/xnu-1699.24.8/libkern/zlib/}}\uc0\u8232 and\u8232 {\field{\*\fldinst{HYPERLINK "http://en.wikipedia.org/wiki/Zlib"}}{\fldrslt \cf5 http://en.wikipedia.org/wiki/Zlib}}\
+FYI; These functions:\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth660\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth7280\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrs\brdrw60\brdrcf7 \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl100 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr
+
+\f2\fs22 \cf6 1\cell 
+\pard\intbl\itap1\pardeftab720
+\cf0 AppleHDADriver::layoutLoadHandler(void\'a0 const*,uint)\cell \lastrow\row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth660\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth7560\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrs\brdrw60\brdrcf7 \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl100 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr
+\cf6 2\cell 
+\pard\intbl\itap1\pardeftab720
+\cf0 AppleHDADriver::platformLoadHandler(void\'a0 const*,uint)\cell \lastrow\row
+\pard\pardeftab720
+
+\f1\fs24 \cf4 \
+call 
+\i _uncompress
+\i0  aka
+\f2\fs22 \
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth660\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth9220\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrs\brdrw60\brdrcf7 \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl100 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr
+\cf6 1\cell 
+\pard\intbl\itap1\pardeftab720
+\cf0 int uncompress(Bytef *dest, uLongf *destLen, const Bytef *source, uLong sourceLen)\cell \lastrow\row
+\pard\pardeftab720\sa160
+
+\f1\fs24 \cf4 \
+
+\b Update
+\b0 \uc0\u8232 I have a Perl script to inflate and deflate the resource files, which I will add to my dropbox account a.s.a.p. And done!\
+Download {\field{\*\fldinst{HYPERLINK "http://bit.ly/IYTe6N"}}{\fldrslt \cf5 zlib.pl.zip}} and let me know what you think. Have fun with it 
+\f0 \cf0 {{\NeXTGraphic icon_wink.gif \width300 \height300 \noorient
+}¬}
+\f1 \cf4 \
+
+\b Usage
+\b0 \uc0\u8232 You can inflate (decompress) a file with:\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth660\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth7420\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrs\brdrw60\brdrcf7 \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl100 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr
+
+\f2\fs22 \cf6 1\cell 
+\pard\intbl\itap1\pardeftab720
+\cf0 perl zlib.pl inflate layout99.xml.zlib > layout99.xml\cell \lastrow\row
+\pard\pardeftab720
+
+\f1\fs24 \cf4 \
+And you can deflate (compress) a file with:\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth660\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth7420\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrs\brdrw60\brdrcf7 \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl100 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr
+
+\f2\fs22 \cf6 1\cell 
+\pard\intbl\itap1\pardeftab720
+\cf0 perl zlib.pl deflate layout99.xml > layout99.xml.zlib\cell \lastrow\row
+\pard\pardeftab720\sa160
+
+\f1\fs24 \cf4 \
+}
