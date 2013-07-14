@@ -24,9 +24,7 @@ Note: The native AppleHDA.kext supports HDMI audio (HDMI audio dsdt edits requir
 The are three techniques to enable the Patched ALC AppleHDA.kext:
 1. No dsdt/audio enabler = Audio_ID, install either enabler (use 1a or 1b, not both)
 1a. Audio_ID = 1, HDAEnabler1.kext 
-    https://github.com/toleda/audio_HDAEnabler1 Download ZIP
 1b. Audio_ID = 2, HDAEnabler2.kext
-    https://github.com/toleda/audio_HDAEnabler2 Download ZIP
 2. dsdt/HDEF/layout-id = Audio_ID, see {Guide} Add or Edit dsdt/HDEF.pdf
 2a. Audio_ID = 1, 0x01, 0x00, 0x00, 0x00, 0x00
 2b. Audio_ID = 2, 0x02, 0x00, 0x00, 0x00, 0x00
