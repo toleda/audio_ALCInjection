@@ -19,7 +19,7 @@ Audio_ID: 1 supports 5 and 6 port ALC8xx onboard and/or AMD/Nvidia HDMI audio
 Audio_ID: 2 supports 3 port ALC8xx onboard and/or AMD/Nvidia HDMI audio
 Audio_ID: 3 supports 3, 5 and 6 port ALC8xx onboard, HD4K/HD3K and AMD/Nvidia HDMI 	audio
 
-Note: The native AppleHDA.kext supports HDMI audio (HDMI audio dsdt edits required) even with an unsupported onboard audio codec with Audio ID: 1. 
+Note: The native AppleHDA.kext supports HDMI audio (dsdt edits required) even with an unsupported onboard audio codec using Audio ID: 1. 
 
 The are three techniques to enable the Patched ALC AppleHDA.kext:
 1. No dsdt/audio enabler = Audio_ID, install either enabler (use 1a or 1b, not both)
