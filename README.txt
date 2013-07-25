@@ -14,39 +14,42 @@ ML-Customizing the Patched AppleHDA.pdf
 In ML, The Patched ALC AppleHDA.kext supports 6 Realtek audio codecs:
 ALC885, ALC887, ALC888, ALC889, ALC892, ALC898
 
-For each supported codec, the Patched ALC AppleHDA.kext supports 3 Audio_IDs:
+Three Patched ALC898 AppleHDA.kext Audio_IDs, select one
 Audio_ID: 1 supports 5 and 6 port ALC8xx onboard and/or AMD/Nvidia HDMI audio  
 Audio_ID: 2 supports 3 port ALC8xx onboard and/or AMD/Nvidia HDMI audio
-Audio_ID: 3 supports 3, 5 and 6 port ALC8xx onboard, HD4K/HD3K and AMD/Nvidia HDMI 	audio
+Audio_ID: 3 supports 3, 5 and 6 port ALC8xx onboard HD4K/HD3K HDMI audio
+		with or without AMD/Nvidia HDMI audio
+Audio_IDs: 1 and 2 support analog 5.1 surround sound, 3 does not
+Audio_IDs: 1, 2 and 3 require HDMI audio dsdt edits for HDMI audio
 
 Note: The native AppleHDA.kext supports HDMI audio (dsdt edits required) even with an unsupported onboard audio codec using Audio ID: 1. 
 
-The are three techniques to enable the Patched ALC AppleHDA.kext:
+Three techniques enable the Patched ALC898 AppleHDA.kext, select one
 1. No dsdt/audio enabler = Audio_ID, install either enabler (use 1a or 1b, not both)
-1a. Audio_ID = 1, HDAEnabler1.kext 
-1b. Audio_ID = 2, HDAEnabler2.kext
+1a. Audio_ID = 1/HDAEnabler1.kext https://github.com/toleda/audio_HDAEnabler1
+1b. Audio_ID = 2/HDAEnabler2.kext https://github.com/toleda/audio_HDAEnabler2
 2. dsdt/HDEF/layout-id = Audio_ID, see {Guide} Add or Edit dsdt/HDEF.pdf
-2a. Audio_ID = 1, 0x01, 0x00, 0x00, 0x00, 0x00
-2b. Audio_ID = 2, 0x02, 0x00, 0x00, 0x00, 0x00
-2c. Audio_ID = 3, 0x03, 0x00, 0x00, 0x00, 0x00
+2a. Audio_ID = 1/layout-id: 0x01, 0x00, 0x00, 0x00, 0x00
+2b. Audio_ID = 2/layout-id: 0x02, 0x00, 0x00, 0x00, 0x00
+2c. Audio_ID = 3/layout-id: 0x03, 0x00, 0x00, 0x00, 0x00
 3. Clover/Config.plist/PCI/HDAInjection, see ML-Clover Patched ALC AppleHDA Injection.pdf
-3a. Audio_ID = 1, HDAInjection=1
-3b. Audio_ID = 2, HDAInjection=2
-3c. Audio_ID = 3, HDAInjection=3
+3a. Audio_ID = 1/HDAInjection=1
+3b. Audio_ID = 2/HDAInjection=2
+3c. Audio_ID = 3/HDAInjection=3
 
 Once the Patched ALC AppleHDA audio is enabled, select the appropriate codec
-1. https://github.com/toleda/audio_ALC885 Download ZIP
-2. https://github.com/toleda/audio_ALC887 Download ZIP
-3. https://github.com/toleda/audio_ALC888 Download ZIP
-4. https://github.com/toleda/audio_ALC889 Download ZIP
-5. https://github.com/toleda/audio_ALC892 Download ZIP
-6. https://github.com/toleda/audio_ALC898 Download ZIP 
+1. https://github.com/toleda/audio_ALC885
+2. https://github.com/toleda/audio_ALC887
+3. https://github.com/toleda/audio_ALC888
+4. https://github.com/toleda/audio_ALC889
+5. https://github.com/toleda/audio_ALC892
+6. https://github.com/toleda/audio_ALC898 
 
 Installation
 Install Patched ALC898 AppleHDA.kext with Terminal, DPCIManager, Kext Wizard, etc.
 
 Troubleshooting
-1. ML-Patched ALC AppleHDA Capabilities.pdf
+1. ML-Patched ALC AppleHDA Capabilities.pdf 
 2. Post to http://www.insanelymac.com
 3. Post to http://www.tonymacx86.com/audio/76309-mountain-lion-multibeast-no-audio-solutions-problem-reporting.html
 
