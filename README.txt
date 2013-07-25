@@ -48,7 +48,7 @@ Once the Realtek ALC AppleHDA audio is enabled, select the appropriate codec
 
 Troubleshooting
 1. ML-Realtek ALC AppleHDA Capabilities.pdf 
-2. Post to http://www.insanelymac.com
+2. Post to http://www.insanelymac.com/forum/topic/290796-realtek-alc-applehda-audio-injection/
 3. Post to http://www.tonymacx86.com/audio/76309-mountain-lion-multibeast-no-audio-solutions-problem-reporting.html
 
 Credit
