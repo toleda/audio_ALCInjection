@@ -11,6 +11,8 @@ ML-Realtek ALC AppleHDA Capabilities.pdf
 ML-Realtek ALC AppleHDA Screenshots.pdf
 ML-Customizing the Realtek AppleHDA.pdf
 
+IORegistryExplorer_v2.1
+
 In ML, The Realtek ALC AppleHDA.kext supports 6 Realtek audio codecs:
 ALC885, ALC887, ALC888, ALC889, ALC892, ALC898
 
@@ -45,7 +47,6 @@ Once the Realtek ALC AppleHDA audio is enabled, select the appropriate codec
 5. https://github.com/toleda/audio_ALC892
 6. https://github.com/toleda/audio_ALC898 
  
-
 Troubleshooting
 1. ML-Realtek ALC AppleHDA Capabilities.pdf 
 2. Post to http://www.insanelymac.com/forum/topic/290796-realtek-alc-applehda-audio-injection/
