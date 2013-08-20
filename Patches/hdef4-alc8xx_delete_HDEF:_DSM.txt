@@ -1,0 +1,9 @@
+# Maintained by: toleda for: github.com/toleda/audio_ALCinjection
+# File: hdef4-alc8xx_delete_HDEF/_DSM.txt_v2.0
+#
+# Add_HDEF, for dsdts with no HDEF, set Audio_ID: 1
+#
+# 1. Remove dsdt/HDEF/Method (_DSM,….
+into method label _DSM parent_adr 0x001B0000 remove_entry;
+into definitionblock code_regex . insert
+begin Store ("hhdef4-alc8xx_delete_HDEF/_DSM.txt_v2.0 dsdt edits, github.com/toleda", Debug) end
