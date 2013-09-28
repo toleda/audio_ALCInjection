@@ -34,11 +34,11 @@ http://www.insanelymac.com/forum/topic/290796-realtek-alc-applehda-audio-injecti
 https://github.com/toleda/audio_kext_enabler
 1a. Audio_ID = 1/HDAEnabler1.kext.zip 
 1b. Audio_ID = 2/HDAEnabler2.kext.zip
-2. dsdt/HDEF/layout-id = Audio_ID, see {Guide} Add or Edit dsdt/HDEF.pdf
+2. dsdt/HDEF/layout-id = Audio_ID, see {Guide} Add or Edit dsdt-HDEF.pdf
 https://github.com/toleda/audio_ALCInjection
 2a. Audio_ID = 1/layout-id: 0x01, 0x00, 0x00, 0x00, 0x00
 2b. Audio_ID = 2/layout-id: 0x02, 0x00, 0x00, 0x00, 0x00
-3. ssdt/HDEF/layout-id = Audio_ID, see {Guide} Add ssdt/HDEF.pdf
+3. ssdt/HDEF/layout-id = Audio_ID, see {Guide} Add ssdt-HDEF.pdf
 https://github.com/toleda/audio_ssdt_enabler
 3a. Audio_ID = 1/audio_ssdt-hdae-1.zip
 3b. Audio_ID = 2/audio_ssdt-hdae-2.zip
