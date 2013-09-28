@@ -5,8 +5,8 @@ OS X Realtek ALC885 through ALC898 Onboard Audio
 This guide enables OS X Realtek ALC onboard audio on Intel based motherboards with a bootable clean install of OS X. The Realtek AppleHDA.kext only works with the codec the kext was edited for and replaces the native AppleHDA.kext.
 
 Realtek ALC AppleHDA Guides:
-[Guide] Add or Edit dsdt/HDEF.pdf
-[Guide] Add ssdt/HDEF.pdf
+[Guide] Add or Edit dsdt-HDEF.pdf
+[Guide] Add ssdt-HDEF.pdf
 ML-Clover Realtek ALC AppleHDA Injection.pdf
 ML-Realtek ALC AppleHDA Capabilities.pdf
 ML-Realtek ALC AppleHDA Screenshots.pdf
@@ -72,8 +72,8 @@ RevoGirl
 toleda
 https://github.com/toleda/audio_ALCInjection
 Patches
-[Guide] Add or Edit dsdt/HDEF.pdf
-[Guide] Add ssdt/HDEF.pdf
+[Guide] Add or Edit dsdt-HDEF.pdf
+[Guide] Add ssdt-HDEF.pdf
 IORegistryExplorer_v2.1
 ML-Clover Realtek ALC AppleHDA Injection.pdf
 ML-Realtek ALC AppleHDA Capabilities.pdf
