@@ -75,10 +75,18 @@ Once the Realtek ALC AppleHDA audio is enabled, select the appropriate codec
 6. https://github.com/toleda/audio_ALC898
 7. https://github.com/toleda/audio_ALC1150
  
-Troubleshooting
-1. ML-Realtek ALC AppleHDA Capabilities.pdf 
-2. Post to http://www.insanelymac.com/forum/topic/290796-realtek-alc-applehda-audio-injection/
-3. Post to http://www.tonymacx86.com/audio/76309-mountain-lion-multibeast-no-audio-solutions-problem-reporting.html
+Problem Reporting
+1. Motherboard/BIOS version/processor/graphics/OS and version
+2. Copy of dsdt (if edited)
+3. Copy of IORegistryExplorer
+
+Troubleshooting/Post w/attachments 2 and 3, above
+1. Mavericks/10.9
+1a. http://www.tonymacx86.com/audio/112461-mavericks-no-audio-realtek-alc-applehda.html
+1b. http://www.insanelymac.com/forum/topic/292999-mavericks-applehda-hdmi-audio/
+2. Mountain Lion/10.8
+2a.http://www.tonymacx86.com/audio/76309-mountain-lion-multibeast-no-audio-solutions-problem-reporting.html
+2b. http://www.insanelymac.com/forum/topic/290797-mountain-lion-realtek-alc-applehda-audio/
 
 Credit
 THe KiNG 
