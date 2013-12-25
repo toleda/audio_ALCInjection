@@ -98,6 +98,13 @@ RevoGirl
 toleda
 https://github.com/toleda/audio_ALCInjection
 Patches
+hdef0-add_dsdt-HDEF-1.txt
+hdef1-alc8xx_audio-1.txt
+hdef2-alc8xx_audio-2.txt
+hdef3-alc8xx_audio-3.txt
+hdef4-delete_HDEF-_DSM.txt
+hdef5-rename_dsdt-AZAL-1.txt
+Guides
 [Guide] Add HDEF-Clover.pdf
 [Guide] Add or Edit HDEF-dsdt.pdf
 [Guide] Add HDEF-kext.pdf

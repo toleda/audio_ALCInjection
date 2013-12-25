@@ -1,0 +1,26 @@
+# Maintained by: toleda for: github.com/toleda/audio_alc8xx
+# File: hdef5-rename_dsdt-AZAL-1.txt_v2.0
+# Credit: PikeRAlpha
+#
+# Rename_AZAL-to-HDEF, for dsdts with AZAL, set Audio_ID: 1
+#
+# 1. Rename dsdt/AZAL to HDEF, set Audio ID:1/layout-id=1
+into device label AZAL set_label begin HDEF end;
+into_all all code_regex AZAL replaceall_matched begin HDEF end;
+into device label HDEF insert
+begin
+    Method (_DSM, 4, NotSerialized)\n
+    {\n
+            If (LEqual (Arg2, Zero)) { Return (Buffer() { 0x03 } ) }\n
+            Return (Package()\n
+            {\n
+                "layout-id", Buffer() { 0x01, 0x00, 0x00, 0x00 },\n
+                "PinConfigurations", Buffer(Zero) {},\n
+                "hda-gfx", Buffer() { "onboard-1" },\n
+            })\n
+    }\n
+end;
+into definitionblock code_regex . insert
+begin Store ("hdef5-rename_dsdt-AZAL-1.txt_v2.0 dsdt edits, github.com/toleda", Debug) end
+
+

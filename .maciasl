@@ -3,4 +3,5 @@ Add dsdt/HDEF/Audio ID: 1	DSDT	Patches/hdef0-add_dsdt-HDEF-1.txt
 Enable Audio ID: 1	DSDT	Patches/hdef1-alc8xx_audio-1.txt
 Enable Audio ID: 2	DSDT	Patches/hdef2-alc8xx_audio-2.txt
 Enable Audio ID: 3	DSDT	Patches/hdef3-alc8xx_audio-3.txt
-Remove HDEF/_DSM	DSDT	Patches/hdef4-alc8xx_delete_HDEF-_DSM.txt
+Remove dsdt/HDEF/_DSM	DSDT	Patches/hdef4-delete_HDEF-_DSM.txt
+Rename dsdt/AZAL/Audio ID: 1	DSDT	Patches/hdef5-rename_dsdt-AZAL-1.txt
