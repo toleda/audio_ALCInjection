@@ -56,6 +56,11 @@ https://github.com/toleda/audio_ALCInjection
 4a. Audio_ID = 1/Audio/Inject=1
 4b. Audio_ID = 2/Audio/Inject=2
 4c. Audio_ID = 3/NA
+5. HDEF/Chameleon/Customize/Setting/HDEF Layout/
+https://github.com/toleda/audio_ALCInjection
+5a. Audio_ID = 1/LayoutID=1
+5b. Audio_ID = 2/LayoutID=2
+5c. Audio_ID = 3/NA
 
 Verification
 1. Restart
