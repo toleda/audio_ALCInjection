@@ -36,27 +36,27 @@ Audio_ID: 3, not supported with ALC885 and ALC1150.
 Note: The native AppleHDA.kext supports HDMI audio (dsdt edits required) even with an unsupported onboard audio codec using Audio ID: 1. 
 
 Four Audio ID Injection techniques for the Realtek ALC AppleHDA.kext, select one
-1. HDEF/kext/No dsdt/audio enabler = Audio_ID, see [Guide] Add HDEF-kext.pdf
+1. HDEF/kext/No dsdt/audio enabler = Audio_ID, see [Guide]_Add_HDEF-kext.pdf
 https://github.com/toleda/audio_kext_enabler
 1a. Audio_ID = 1/HDAEnabler1.kext.zip 
 1b. Audio_ID = 2/HDAEnabler2.kext.zip
 1c. Audio_ID = 3/NA
-2. HDEF/dsdt/layout-id = Audio_ID, see [Guide] Add or Edit HDEF-dsdt.pdf
+2. HDEF/dsdt/layout-id = Audio_ID, see [Guide]_Add_or_edit_HDEF-dsdt.pdf
 https://github.com/toleda/audio_ALCInjection
 2a. Audio_ID = 1/layout-id: 0x01, 0x00, 0x00, 0x00, 0x00
 2b. Audio_ID = 2/layout-id: 0x02, 0x00, 0x00, 0x00, 0x00
 2c. Audio_ID = 3, see dsdt/HD3K/HD4K HDMI audio
-3. HDEF/lssdt/ayout-id = Audio_ID, see [Guide] Add HDEF-ssdt.pdf
+3. HDEF/lssdt/ayout-id = Audio_ID, see [Guide]_Add_HDEF-ssdt.pdf
 https://github.com/toleda/audio_ssdt_enabler
 3a. Audio_ID = 1/audio_ssdt-hdae-1.zip
 3b. Audio_ID = 2/audio_ssdt-hdae-2.zip
 3c. Audio_ID = 3, see ssdt/HD3K/HD4K HDMI audio
-4. HDEF/Clover/Config.plist/Devices, see [Guide] Add HDEF-Clover.pdf
+4. HDEF/Clover/Config.plist/Devices, see [Guide]_Add_HDEF-Clover.pdf
 https://github.com/toleda/audio_ALCInjection
 4a. Audio_ID = 1/Audio/Inject=1
 4b. Audio_ID = 2/Audio/Inject=2
-4c. Audio_ID = 3/NA
-5. HDEF/Chameleon/Customize/Setting/HDEF Layout/
+4c. Audio_ID = 3/Audio/Inject=3
+5. Ghameleon/Customize/Setting/HDEF Layout/
 https://github.com/toleda/audio_ALCInjection
 5a. Audio_ID = 1/LayoutID=1
 5b. Audio_ID = 2/LayoutID=2
