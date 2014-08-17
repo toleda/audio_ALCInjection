@@ -56,11 +56,16 @@ https://github.com/toleda/audio_ALCInjection
 4a. Audio_ID = 1/Audio/Inject=1
 4b. Audio_ID = 2/Audio/Inject=2
 4c. Audio_ID = 3/Audio/Inject=3
-5. Ghameleon/Customize/Setting/HDEF Layout/
+5. Chameleon/Customize/Setting/HDEF Layout/
 https://github.com/toleda/audio_ALCInjection
 5a. Audio_ID = 1/LayoutID=1
 5b. Audio_ID = 2/LayoutID=2
 5c. Audio_ID = 3/NA
+6. Chimera and HDAEnabler/org.chameleon.Boot.plist
+http://www.tonymacx86.com/audio/131926-how-use-hdaenabler-module-chimera.html
+6a. Audio_ID = 1/HDAEnabler=Yes and HDEFLayoutID=01000000
+6b. Audio_ID = 2/HDAEnabler=Yes and HDEFLayoutID=02000000
+6c. Audio_ID = 1/HDAEnabler=Yes and HDEFLayoutID=03000000
 
 Verification
 1. Restart
