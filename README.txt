@@ -60,7 +60,7 @@ https://github.com/toleda/audio_ALCInjection
 https://github.com/toleda/audio_ALCInjection
 5a. Audio_ID = 1/LayoutID=1
 5b. Audio_ID = 2/LayoutID=2
-5c. Audio_ID = 3/NA
+5c. Audio_ID = 3/LayoutID=3
 6. Chimera and HDAEnabler/org.chameleon.Boot.plist
 http://www.tonymacx86.com/audio/131926-how-use-hdaenabler-module-chimera.html
 6a. Audio_ID = 1/HDAEnabler=Yes and HDEFLayoutID=01000000
