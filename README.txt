@@ -4,6 +4,9 @@ OS X Realtek ALC885 through ALC1150 Onboard Audio
 
 This guide enables OS X Realtek ALC onboard audio on Intel based motherboards with OS X. The Realtek AppleHDA.kext only works with the codec the kext was edited for and patches the installed native AppleHDA.kext.  Realtek ALC AppleHDA.kext supports Mavericks (M) and Mountain Lion (ML).
 
+OS X/AppleHDA.kext/9 Series motherboard support (temporary)
+Download: audio_alc_9series-hda-93_patch.command.zip
+
 Realtek ALC AppleHDA Guides:
 [Guide] Add HDEF-Clover.pdf
 [Guide] Add or Edit HDEF-dsdt.pdf
