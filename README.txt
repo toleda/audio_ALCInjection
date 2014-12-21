@@ -48,7 +48,7 @@ https://github.com/toleda/audio_ssdt_enabler
 3a. Audio_ID = 1/audio_ssdt-hdae-1.zip
 3b. Audio_ID = 2/audio_ssdt-hdae-2.zip
 3c. Audio_ID = 3, see ssdt/HD3K/HD4K HDMI audio
-4. Clover/Config.plist/Devices, see ML-Clover Realtek ALC AppleHDA Injection.pdf
+4. Clover/Config.plist/Devices, see [Guide]-Add_HDEF-Clover.pdf
 https://github.com/toleda/audio_ALCInjection
 4a. Audio_ID = 1/Audio/Inject=1
 4b. Audio_ID = 2/Audio/Inject=2
