@@ -4,21 +4,18 @@ OS X Realtek ALC885 through ALC1150 Onboard Audio
 
 This guide enables OS X Realtek ALC onboard audio on Intel based motherboards with OS X. The Realtek AppleHDA.kext only works with the codec the kext was edited for and replaces the native AppleHDA.kext.
 
-Realtek ALC AppleHDA Guides:
+Realtek ALC AppleHDA HDEF/Audio ID Injection Guides:
 [Guide] Add HDEF-Clover.pdf
 [Guide] Add or Edit HDEF-dsdt.pdf
 [Guide] Add HDEF-kext.pdf
 [Guide] Add HDEF-ssdt.pdf
-M-Realtek ALC AppleHDA Capabilities.pdf
-M-Realtek ALC AppleHDA Customization.pdf
-M-Realtek ALC AppleHDA Screenshots.pdf
 
 Note: ML-Realtek ALC AppleHDA docs moved to folder above
 
 IORegistryExplorer_v2.1
 
 In OS X, The Realtek ALC AppleHDA.kext supports 7 Realtek audio codecs:
-ALC885, ALC887, ALC888, ALC889, ALC892, ALC898, ALC1150/10.8.5 and newer
+ALC885, ALC887, ALC888, ALC889, ALC892, ALC898, ALC1150/10.9 and newer
 
 Three Realtek ALC AppleHDA.kext Audio_IDs, select one
 Audio_ID: 1 supports 5 and 6 port ALC8xx onboard and/or HD5K/AMD/Nvidia HDMI audio  
@@ -81,9 +78,7 @@ Once the Realtek ALC AppleHDA audio is enabled, select the appropriate codec
 7. https://github.com/toleda/audio_ALC1150
  
 Troubleshooting
-1. ML-Realtek ALC AppleHDA Capabilities.pdf 
-2. Post to http://www.insanelymac.com/forum/topic/290796-realtek-alc-applehda-audio-injection/
-3. Post to http://www.tonymacx86.com/audio/76309-mountain-lion-multibeast-no-audio-solutions-problem-reporting.html
+1. See https://github.com/toleda/audio_RealtekALC/blob/master/DETAILS.md
 
 Credit
 THe KiNG 
