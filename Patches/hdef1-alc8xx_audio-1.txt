@@ -15,7 +15,6 @@ begin
 	    {\n
                 "layout-id", Buffer() { 0x01, 0x00, 0x00, 0x00 },\n
                 "PinConfigurations", Buffer(Zero) {},\n
-  	        "hda-gfx", Buffer() { "onboard-1" },\n
 	    })\n
     }\n
 end;
