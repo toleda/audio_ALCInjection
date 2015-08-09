@@ -8,7 +8,8 @@ Realtek ALC AppleHDA HDEF/Audio ID Injection Guides:
 [Guide] Add HDEF-Clover.pdf
 [Guide] Add or Edit HDEF-dsdt.pdf
 [Guide] Add HDEF-kext.pdf
-[Guide] Add HDEF-ssdt.pdf
+[Guide] Add HDEF-ssdt.pdf - DEPRECATED, replaced with:
+[Guide]-OSX-hdmi_audio-hdef_audio-ssdt_v3, https://github.com/toleda/audio_hdmi_guides
 
 Note: ML-Realtek ALC AppleHDA docs moved to folder above
 
@@ -68,16 +69,11 @@ Verification
 <01 00 00 00> or
 <02 00 00 00>
 
-Once the Realtek ALC AppleHDA audio is enabled, select the appropriate codec
-1. https://github.com/toleda/audio_ALC885
-2. https://github.com/toleda/audio_ALC887
-3. https://github.com/toleda/audio_ALC888
-4. https://github.com/toleda/audio_ALC889
-5. https://github.com/toleda/audio_ALC892
-6. https://github.com/toleda/audio_ALC898
-7. https://github.com/toleda/audio_ALC1150
- 
-Troubleshooting
+Once the Realtek ALC AppleHDA audio is enabled, select one
+1. See https://github.com/toleda/audio_RealtekALC
+2. See https://github.com/toleda/audio_CloverALC
+
+Problem Reporting
 1. See https://github.com/toleda/audio_RealtekALC/blob/master/DETAILS.md
 
 Credit
@@ -89,13 +85,4 @@ RevoGirl
 
 toleda
 https://github.com/toleda/audio_ALCInjection
-Patches
-[Guide] Add or Edit dsdt-HDEF.pdf
-[Guide] Add ssdt-HDEF.pdf
-IORegistryExplorer_v2.1
-ML-Clover Realtek ALC AppleHDA Injection.pdf
-ML-Realtek ALC AppleHDA Capabilities.pdf
-ML-Realtek ALC AppleHDA Screenshots.pdf
-ML-Customizing the Realtek AppleHDA.pdf
-zlib_terminal
 README.txt
