@@ -1,0 +1,26 @@
+Last login: Sun Jan 17 22:44:37 on ttys000
+dlt-impactHT:~ dtottle$ /Users/dtottle/Downloads/audio_codecdetect.command ; exit;
+File: audio_codecdetect.command_v1.2
+
+HDMI audio codec(s)
+Intel:    0x80862807
+AMD:      0x1002aa01
+
+Onboard audio codec
+Realtek: 0x10ec0900
+
+Codec: ALC1150
+Device: HDEF@1B
+Audio ID: 2
+
+Valid audio codec, audio device and Audio ID; Audio/ALC Injection: OK
+Finished
+
+logout
+Saving session...
+...copying shared history...
+...saving history...truncating history files...
+...completed.
+
+[Process completed]
+
