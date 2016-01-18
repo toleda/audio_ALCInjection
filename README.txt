@@ -83,3 +83,7 @@ RevoGirl
 toleda
 https://github.com/toleda/audio_ALCInjection
 README.txt
+
+ssdt_hdef-1-with_ioreg:hdef.zip
+ssdt_hdef-1-with_ioreg/hdef
+ssdt_hdef-2-100-hdas
