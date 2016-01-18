@@ -1,5 +1,9 @@
+![alt text](https://github.com/toleda/audio_RealtekALC/blob/master/sound.jpeg)
 audio_ALCInjection
 ============
+**OS X/Realtek ALC AppleHDA Injection**  
+Native AppleHDA  
+ 
 OS X/Desktop/Realtek ALC 885, 887, 888, 889, 892, 898 and 1150 and NUC/BRIX/Realtek ALC 269 and 283 audio
 
 v4: 1/18/16 - Clover ssdt hdef v4, codecdetect v1.2
@@ -8,7 +12,7 @@ v3: 11/27/15 - ssdt_hdef supports with IOReg/HDEF, without IOReg/HDEF, AZAL, x99
 
 This guide enables OS X Realtek ALC onboard audio on Intel based motherboards with OS X. The Realtek AppleHDA.kext only works with the codec the kext was edited for and works with or replaces the native AppleHDA.kext.
 
-**A - Audio/ALC Injection Status**
+**A. Audio/ALC Injection Status**
 
 1. Download: [audio_codecdetect.command](https://github.com/toleda/audio_ALCInjection/blob/master/audio_codecdetect.command.zip) (select View Raw)
 2. Confirm OS X support
@@ -17,15 +21,15 @@ This guide enables OS X Realtek ALC onboard audio on Intel based motherboards wi
 	3. Audio ID (1, 2 or 3)
 3. Installation
 	1. Double click Downloads/audio_codecdetect.command
-	2. Review results
-		1. OK: Audio/ALC Injection working
+	2. Results
+		1. OK: Audio/ALC Injection
 		2. NOK: problems/fixes
 			1. specific ssdt
 			2. Clover injection
 4. Terminal/Shell/Export Text As...
 	1. [audio_codecdetect.command](https://github.com/toleda/audio_ALCInjection/blob/master/terminal-codecdetect)
 
-**B - Audio/ALC Injection techniques** select one method
+**B. Audio/ALC Injection techniques** select one method
 
 1. No dsdt/audio enabler  (use kext installer)
 	See [Guide]-Add_HDEF-kext.pdf
@@ -79,17 +83,17 @@ This guide enables OS X Realtek ALC onboard audio on Intel based motherboards wi
 		1. HDAEnabler=Yes
 		2. HDEFLayoutID=03000000
 
-**C - Audio ID Verification**
+**C. Audio ID Verification**
 
 1. Restart
 2. See A - Audio/ALC Injection Status
 
-**D - Realtek ALC AppleHDA Audio Installation Methods**
+**D. Realtek ALC AppleHDA Audio Installation Methods**
 
 1. [cloverALC - Clover/kext patch](https://github.com/toleda/audio_CloverALC)
 2. [realtekALC - Kext/binary patch](https://github.com/toleda/audio_RealtekALC)
 
-**E - Requirements**
+**E. Requirements**
 
 1.  OS X Versions (+ all)
     1.  10.11+/El Capitan 
@@ -113,7 +117,7 @@ This guide enables OS X Realtek ALC onboard audio on Intel based motherboards wi
 4.  Supported Realtek onboard audio codec
     1.  [Unknown codec?](https://github.com/toleda/audio_ALCInjection/blob/master/audio_codecdetect.command.zip)
 
-**F - Realtek ALCxxx** (verify codec and Audio ID)
+**F. Realtek ALCxxx** (verify codec and Audio ID)
 
 1.  Supported codecs
     1.  269 (BRIX only)
@@ -138,7 +142,7 @@ This guide enables OS X Realtek ALC onboard audio on Intel based motherboards wi
     5. Audio_IDs: 1, 2 and 3 require HDMI audio dsdt edits for HDMI audio
     6.  The native AppleHDA.kext supports HDMI audio (dsdt edits required) with an unsupported onboard audio codec using Audio ID: 1. 
 
-**G - More Information**
+**G. More Information**
 
 1. [Audio ID Injection](https://github.com/toleda/audio_ALCInjection)
 2. [Details](https://github.com/toleda/audio_RealtekALC/blob/master/DETAILS.md)
@@ -157,7 +161,7 @@ This guide enables OS X Realtek ALC onboard audio on Intel based motherboards wi
 	7. Surround Sound 
 4. [Terminal Saved Output](https://github.com/toleda/audio_RealtekALC/blob/master/Terminal:audio_realtekALC-110.command_v1.0a.txt)
 
-**H - Tools**
+**H. Tools**
 
 1. [IOReg_v2.1](https://github.com/toleda/audio_ALCInjection/blob/master/IORegistryExplorer_v2.1.zip) (select View Raw)
 2. [DPCIManger](http://sourceforge.net/projects/dpcimanager/)  
@@ -168,18 +172,17 @@ This guide enables OS X Realtek ALC onboard audio on Intel based motherboards wi
 	2. Property List Editor, PlistEdit Pro, TextEdit, etc.
 	3. TextEdit, TextWrangler (last resort)
 
-**I - Problem Reporting** (no files atached, no reply)
+**I. Problem Reporting** (no files atached, no reply)
 
 1.	Description of audio problem
 2.	OS X version/motherboard model/BIOS version/processor/graphics
 3.	Procedure/Guide used
-4.	Installed S/L/E/AppleHDA.kext
-5.	Copy of IOReg - IOReg_v2.1/File/Save a Copy As…, verify file (Tools 1.)
-6.	Screenshot: DPCIManager/Status (Tools 2.) 
-7.	DPCIManager/Misc/Boot Log, atttach text file
-8.	Terminal/Shell/File/Export Text As. . . /
-	1. audio_cloverALC-110...command
-	2. audio_pikeralphaALC-110...command
+4. Terminal/Shell/File/Export Text As. . . 
+	1. audio_codecdetect.command (Tools 4.)
+5.	Installed S/L/E/AppleHDA.kext
+6.	Copy of IOReg - IOReg_v2.1/File/Save a Copy As…, verify file (Tools 1.)
+7.	Screenshot: DPCIManager/Status (Tools 2.) 
+8.	DPCIManager/Misc/Boot Log, atttach text file
 9. Chameleon (if installed)
 	1. Extra/org.chameleon.Boot.plist
 	2. DPCIManager/Misc/Boot Log (Tools 2.)
