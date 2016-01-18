@@ -22,7 +22,8 @@ This guide enables OS X Realtek ALC onboard audio on Intel based motherboards wi
 		2. NOK: problems/fixes
 			1. specific ssdt
 			2. Clover injection
-4. Terminal (output, see file/repo/above)
+4. Terminal/Shell/Export Text As...
+	1. [audio_codecdetect.command](https://github.com/toleda/audio_ALCInjection/blob/master/terminal-codecdetect)
 
 **B - Audio/ALC Injection techniques** select one method
 
