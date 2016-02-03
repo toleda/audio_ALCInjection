@@ -1,16 +1,18 @@
 ![alt text](https://github.com/toleda/audio_RealtekALC/blob/master/sound.jpeg)
 audio_ALCInjection
 ============
+Realtek ALC/Desktop: 269(1), 283(1), 885, 887, 888, 892, 898 and 1150 on board audio  (1) BRIX/NUC only  
+Supports OS X: 10.11, 10.10, 10.9 and 10.8  
+Native AppleHDA
+
 **OS X/Realtek ALC AppleHDA Injection**  
-Native AppleHDA  
- 
-OS X/Desktop/Realtek ALC 885, 887, 888, 889, 892, 898 and 1150 and NUC/BRIX/Realtek ALC 269 and 283 audio
-
-v4: 1/18/16 - Clover ssdt hdef v4, codecdetect v1.2
-
-v3: 11/27/15 - ssdt_hdef supports with IOReg/HDEF, without IOReg/HDEF, AZAL, x99/ALZA and 100 Series/HDAS for all Intel Desktop motherboards.
 
 This guide enables OS X Realtek ALC onboard audio on Intel based motherboards with OS X. The Realtek AppleHDA.kext only works with the codec the kext was edited for and works with or replaces the native AppleHDA.kext.
+
+**Updates**
+
+v4: 1/18/16 - Clover ssdt hdef v4, codecdetect v1.2
+v3: 11/27/15 - ssdt_hdef supports with IOReg/HDEF, without IOReg/HDEF, AZAL, x99/ALZA and 100 Series/HDAS for all Intel Desktop motherboards.
 
 **A. Audio/ALC Injection Status**
 
