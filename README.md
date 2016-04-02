@@ -11,7 +11,7 @@ This guide enables OS X Realtek ALC onboard audio on Intel based motherboards wi
 
 **Updates**
 
-v4: 1/18/16 - Clover ssdt hdef v4, codecdetect v1.2
+v4: 1/18/16 - Clover ssdt hdef v4, codecdetect v1.2  
 v3: 11/27/15 - ssdt_hdef supports with IOReg/HDEF, without IOReg/HDEF, AZAL, x99/ALZA and 100 Series/HDAS for all Intel Desktop motherboards.
 
 **A. Audio/ALC Injection Status**
@@ -69,7 +69,7 @@ v3: 11/27/15 - ssdt_hdef supports with IOReg/HDEF, without IOReg/HDEF, AZAL, x99
 		2. [Audio_ID = 2](https://github.com/toleda/audio_ALCInjection/blob/master/ssdt_hdef/ssdt_hdef-2-no_ioreg:hdef.zip)
 		3. [Audio_ID = 3](https://github.com/toleda/audio_ALCInjection/blob/master/ssdt_hdef/ssdt_hdef-3-no_ioreg:hdef.zip)
 
-4. Clover/Config.plist/Devices/Audio/Inject/1 
+4. Clover/Config.plist/Devices/Audio/Inject/1 (or 2, or 3)
 	1. Audio_ID = 1
 	2. Audio_ID = 2
 	3. Audio_ID = 3
@@ -90,10 +90,9 @@ v3: 11/27/15 - ssdt_hdef supports with IOReg/HDEF, without IOReg/HDEF, AZAL, x99
 1. Restart
 2. See A - Audio/ALC Injection Status
 
-**D. Realtek ALC AppleHDA Audio Installation Methods**
+**D. Realtek ALC AppleHDA Audio Onboard Audio Solutions**
 
-1. [cloverALC - Clover/kext patch](https://github.com/toleda/audio_CloverALC)
-2. [realtekALC - Kext/binary patch](https://github.com/toleda/audio_RealtekALC)
+1. [Realtek ALC AppleHDA Installation Methods](https://github.com/toleda/audio_RealtekALC/blob/master/DETAILS.md)
 
 **E. Requirements**
 
@@ -147,20 +146,22 @@ v3: 11/27/15 - ssdt_hdef supports with IOReg/HDEF, without IOReg/HDEF, AZAL, x99
 **G. More Information**
 
 1. [Audio ID Injection](https://github.com/toleda/audio_ALCInjection)
-2. [Details](https://github.com/toleda/audio_RealtekALC/blob/master/DETAILS.md)
-    1.  Realtek ALC Audio Solutions
-    2.  Requirements - Supported/Unsupported
-    3.  Notes
-    4.  Guides
-    5.  Tools
-3. [Realtek ALC guides](https://github.com/toleda/audio_ALC_guides)
-	1. Capabilities
-	2. Customization 
-	3. No Audio After Sleep/Wake
-	4. No Audio Devices
-	5. No Sound
-	6. Screenshots
-	7. Surround Sound 
+2. [Realtek ALC AppleHDA](https://github.com/toleda/audio_ALC_guides/blob/master/Realtek%20ALC%20AppleHDA.pdf)
+
+    1. Installation
+    2. Details/Support  
+    3. Troubleshooting
+2. [Realtek ALC guides](https://github.com/toleda/audio_ALC_guides)
+	1. Enhancemants
+		1. Customization
+		2. Surround Sound
+	2. Troubleshooting
+		1. No Audio Devices
+		2. No Sound
+		3. No Audio After Sleep/Wake
+	3. Utilities
+		1. Identify Audio Codec
+		2. Restore native AppleHDA9.  Surround Sound - Realtek ALC -  AppleHDA [Guide] 
 4. [Terminal Saved Output](https://github.com/toleda/audio_RealtekALC/blob/master/Terminal:audio_realtekALC-110.command_v1.0a.txt)
 
 **H. Tools**
@@ -174,30 +175,11 @@ v3: 11/27/15 - ssdt_hdef supports with IOReg/HDEF, without IOReg/HDEF, AZAL, x99
 	2. Property List Editor, PlistEdit Pro, TextEdit, etc.
 	3. TextEdit, TextWrangler (last resort)
 
-**I. Problem Reporting** (no files atached, no reply)
+**I. [Problem Reporting](https://github.com/toleda/audio_ALC_guides/blob/master/Problem%20Reporting.md)**
 
-1.	Description of audio problem
-2.	OS X version/motherboard model/BIOS version/processor/graphics
-3.	Procedure/Guide used
-4. Terminal/Shell/File/Export Text As. . . 
-	1. audio_codecdetect.command (Tools 4.)
-5.	Installed S/L/E/AppleHDA.kext
-6.	Copy of IOReg - IOReg_v2.1/File/Save a Copy As…, verify file (Tools 1.)
-7.	Screenshot: DPCIManager/Status (Tools 2.) 
-8.	DPCIManager/Misc/Boot Log, atttach text file
-9. Chameleon (if installed)
-	1. Extra/org.chameleon.Boot.plist
-	2. DPCIManager/Misc/Boot Log (Tools 2.)
-	3. Extra/dsdt.aml (if installed)
-	4. Extra/ssdt.aml (if installed)
-10.	Clover (if installed)
-	1.	EFI/CLOVER/config.plist
-	2.	DPCIManager/Misc/Boot Log (Tools 2.)
-	3.	EFI/CLOVER/ACPI/Patched/dsdt.aml (if installed)
-	4.	EFI/CLOVER/ACPI/Patched/ssdt.aml (if installed)
-11.	Post to:
-	1.	[Realtek ALC Audio - InsanelyMac.com](http://www.insanelymac.com/forum/topic/308387-el-capitan-realtek-alc-applehda-audio/page-1)
-	2. [Realtek ALC Audio - tonymacx86.com](http://www.tonymacx86.com/audio/143752-no-audio-devices-realtek-alc-applehda-guide.html)
+1. Problem Reporting/Post to
+2. Problem Reporting/Attached requested files
+	1. No files atached, reply unlikley
 
 Credit  
 THe KiNG  
