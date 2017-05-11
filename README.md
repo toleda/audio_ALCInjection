@@ -11,6 +11,7 @@ This guide enables OS X Realtek ALC onboard audio on Intel based motherboards wi
 
 **Updates**
 
+v5: 5/10/17 - 200 Series/Kaby Lake Audio Support
 v4: 1/18/16 - Clover ssdt hdef v4, codecdetect v1.2  
 v3: 11/27/15 - ssdt_hdef supports with IOReg/HDEF, without IOReg/HDEF, AZAL, x99/ALZA and 100 Series/HDAS for all Intel Desktop motherboards.
 
